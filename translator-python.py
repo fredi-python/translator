@@ -1,8 +1,9 @@
 from googletrans import Translator
 
-frage = input('was soll ins englische übersetzt werden? \n')
+question1 = input('in which language do you want to translate? type: de, en etc')
+question2 = input('what do you want to translate?')
 
-trans = Translator()
+translator = Translator()
 
-print(trans.translate(text=frage, dest='en').text)
+print(translator.translate(text=question2, dest=question1).text)
 
